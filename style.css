@@ -139,17 +139,26 @@ td {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     white-space: nowrap;
   }
+
+  .max-width1{
+      display: flex;
+      margin: auto;
+      width:100%;
+  }
   .events-navbar {
-    height: 88px;
+    height: 100px;
+    width: 100%	;
   }
   .events-logo {
     display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .events-image {
     width: 22px;
