@@ -4,9 +4,22 @@
 body{
     /* margin: auto;
     padding: 0; */
-    background-color: #105749;
+    background-color: #2E8A97;
     width: 100%;
     /* max-width: 1080px; */
+    margin: 0;
+}
+
+.title{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 48px;
+    color: white;
+    
 }
 
 .body-con {
@@ -27,6 +40,8 @@ body{
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  border: solid 1px #246972;
+  border-radius: 1em;
 }
 
 td {
@@ -36,17 +51,26 @@ td {
 .calendar-container {
   position: relative;
   width: 450px;
+  /* border: solid 1px #246972; */
+  
 }
 
-.calendar-container header {
-  border-radius: 1em 1em 0 0;
-  background: #e66b6b;
+.calendar-container .header {
+  /* border-radius: 1em 1em 0 0; */
+  background: #2E8A97 ;
   color: #fff;
   padding: 3em 2em;
+  height: 185px;
+  border: solid 1px #246972;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .day {
-  font-size: 8em;
+margin-top: 20px;
+  font-size: 4em;
   font-weight: 900;
   line-height: 1em;
 }
@@ -64,33 +88,43 @@ td {
 }
 
 .calendar {
-  background: #fff;
-  border-radius: 0 0 1em 1em;
-  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
+  background: #2E8A97;
+  /* border-radius: 0 0 1em 1em; */
+  /* border-color: #FFD34E; */
+  /* -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #FFD34E;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #FFD34E; */
   color: #555;
   display: inline-block;
   padding: 2em;
 }
 
 .calendar thead {
-  color: #e66b6b;
+  color: black;
   font-weight: 700;
   text-transform: uppercase;
+ 
 }
 
 .calendar td {
   padding: .5em 1em;
   text-align: center;
+  
 }
 
 .calendar tbody td:hover {
   background: #cacaca;
   color: #fff;
+  background: #FFD34E;
 }
 
-.current-day {
-  color: #e66b6b;
+.current-day{
+  color: cacaca;
+  background: #FFD34E;
+}
+
+.blog-day{
+    color: cacaca;
+    background: #ffd34e80;
 }
 
 .prev-month,
@@ -98,10 +132,17 @@ td {
   color: #cacaca;
 }
 
+.next-months, .next-day, .last-day, .last-month {
+    margin: 10px 0;
+    font-size: 46px;
+    color: #cacaca;
+    text-decoration: none;
+}
+
 .ring-left,
 .ring-right {
   position: absolute;
-  top: 230px;
+  top: 250px;
 }
 
 .ring-left { left: 2em; }
@@ -128,30 +169,36 @@ td {
 
 .events-container {
     width: 100%;
+    height: fit-content;
     display: flex;
     /* overflow:none; */
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
+
   }
   .events-container1 {
     /* flex: 0 0 auto; */
     width: 100%;
-    margin: auto;
+    height: fit-content;
+    margin: 0;
+    padding-top: 20px;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     white-space: nowrap;
+    background: white;
   }
 
   .max-width1{
       display: flex;
       margin: auto;
       width:100%;
+      height: fit-content;
       justify-content: space-evenly;
   }
   .events-navbar {
-    height: 100px;
+    height: fit-content;
     width: 100%	;
   }
   .events-logo {
@@ -168,7 +215,7 @@ td {
     margin-right: 14px;
   }
   .events-text01 {
-    color: rgba(250, 225, 0, 0.867);
+    color: #FFD34E;
   }
   .events-links {
     flex: 0 0 auto;
@@ -177,23 +224,23 @@ td {
     flex-direction: row;
   }
   .events-text02 {
-    color: greenyellow;
+    color: black;
     margin-right: 2.5em;
   }
   .events-text03 {
-    color: greenyellow;
+    color: black;
     margin-right: 2.5em;
   }
   .events-text04 {
-    color: greenyellow;
+    color: black;
     margin-right: 2.5em;
   }
   .events-text05 {
-    color: greenyellow;
+    color: black;
     margin-right: 2.5em;
   }
   .events-burger-menu {
-    fill: #105749;
+    fill: black;
     width: 24px;
     height: 24px;
   }
@@ -213,7 +260,7 @@ td {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f4ff00;
+    background-color: #FFD34E;
   }
   .events-text06 {
     font-size: 3rem;
@@ -371,7 +418,7 @@ td {
       display: none;
     }
     .events-icon {
-      fill: green;
+      fill: #2E8A97;
     }
     .events-banner {
       padding-left: 2em;
